@@ -1,3 +1,5 @@
+window.addEventListener('load', create_table);
+
 function create_table() {
     var table = document.getElementById("grille");
 
@@ -13,7 +15,7 @@ function create_table() {
             // node the contents of the <td>, and put the <td> at
             // the end of the table row
             var cell = document.createElement("td");
-            var cellText = document.createTextNode("cell in row " + i + ", column " + j);
+            var cellText = document.createTextNode("cellule " + i + ", colonne " + j);
             cell.appendChild(cellText);
             row.appendChild(cell);
         }
