@@ -3,7 +3,7 @@ window.addEventListener('load', create_table);
 
 function create_table() {
     // Définir un tableau de mots
-    const mots = ['chat', 'chien', 'oiseau', 'poisson', 'lapin'];
+    const mots = ['chat', 'chien', 'oiseau', 'poisson', 'lapin', 'tartuff', 'tartiflette'];
 
     // Générer un index aléatoire pour sélectionner un mot du tableau
     const indexAleatoire = Math.floor(Math.random() * mots.length);
