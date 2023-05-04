@@ -2,6 +2,20 @@ window.addEventListener('load', create_table);
 
 
 function create_table() {
+    // Définir un tableau de mots
+    const mots = ['chat', 'chien', 'oiseau', 'poisson', 'lapin'];
+
+    // Générer un index aléatoire pour sélectionner un mot du tableau
+    const indexAleatoire = Math.floor(Math.random() * mots.length);
+
+    // Récupérer le mot correspondant à l'index aléatoire
+    const motChoisi = mots[indexAleatoire];
+
+    // Afficher le mot choisi dans la console
+    console.log(`Le mot choisi est : ${motChoisi}`);
+
+
+
     var table = document.getElementById("grille");
 
     var tb1 = document.createElement("table");
@@ -11,7 +25,7 @@ function create_table() {
         // creates a table row
         var row = document.createElement("tr");
 
-        for (var j = 0; j < 6; j++) {
+        for (var j = 0; j < motChoisi.length; j++) {
             // Create a <td> element and a text node, make the text
             // node the contents of the <td>, and put the <td> at
             // the end of the table row
