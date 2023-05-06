@@ -2,8 +2,8 @@ window.addEventListener('load', create_table);
 
 
 function create_table() {
-    // Définir un tableau de mots
-    const mots = ['chat', 'chien', 'oiseau', 'poisson', 'lapin', 'tartuff', 'tartiflette'];
+    // Define table of words
+    const mots = ['CHAT', 'CHIEN', 'OISEAU', 'POISSON', 'LAPIN', 'TARTUFF', 'TARTIFLETTE'];
 
     // Générer un index aléatoire pour sélectionner un mot du tableau
     const indexAleatoire = Math.floor(Math.random() * mots.length);
@@ -11,7 +11,7 @@ function create_table() {
     // Récupérer le mot correspondant à l'index aléatoire
     const motChoisi = mots[indexAleatoire];
 
-    // Afficher le mot choisi dans la console
+    // Print word in console.log
     console.log(`Le mot choisi est : ${motChoisi}`);
 
 
@@ -24,20 +24,28 @@ function create_table() {
     for (var i = 0; i < 6; i++) {
         // creates a table row
         var row = document.createElement("tr");
-
+    
         for (var j = 0; j < motChoisi.length; j++) {
             // Create a <td> element and a text node, make the text
             // node the contents of the <td>, and put the <td> at
             // the end of the table row
             var cell = document.createElement("td");
-            var cellText = document.createTextNode(".");
-            cell.appendChild(cellText);
+            // var cellText = document.createTextNode(".");
+            var letter;
+            if(j == 0){
+              letter = document.createTextNode(motChoisi[0]);
+            }else{
+              letter = document.createTextNode(".");
+            }
+            cell.appendChild(letter);
+            // cell.appendChild(cellText);
             row.appendChild(cell);
         }
-
+    
         // add the row to the end of the table body
         tb1boby.appendChild(row);
     }
+    
 
     // put the <tbody> in the <table>
     tb1.appendChild(tb1boby);
