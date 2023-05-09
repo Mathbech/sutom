@@ -24,7 +24,7 @@ function create_table() {
     for (var i = 0; i < 6; i++) {
         // creates a table row
         var row = document.createElement("tr");
-    
+
         for (var j = 0; j < motChoisi.length; j++) {
             // Create a <td> element and a text node, make the text
             // node the contents of the <td>, and put the <td> at
@@ -32,20 +32,20 @@ function create_table() {
             var cell = document.createElement("td");
             // var cellText = document.createTextNode(".");
             var letter;
-            if(j == 0){
-              letter = document.createTextNode(motChoisi[0]);
-            }else{
-              letter = document.createTextNode(".");
+            if (j == 0) {
+                letter = document.createTextNode(motChoisi[0]);
+            } else {
+                letter = document.createTextNode(".");
             }
             cell.appendChild(letter);
             // cell.appendChild(cellText);
             row.appendChild(cell);
         }
-    
+
         // add the row to the end of the table body
         tb1boby.appendChild(row);
     }
-    
+
 
     // put the <tbody> in the <table>
     tb1.appendChild(tb1boby);
