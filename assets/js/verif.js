@@ -4,7 +4,6 @@ window.addEventListener("keydown", function (event) {
     }
 }, true);
 
-
-verif(); {
+function verif() {
     console.log("vérification...");
 }
