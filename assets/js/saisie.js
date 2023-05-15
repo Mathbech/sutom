@@ -1,5 +1,4 @@
 window.addEventListener('load', ajouterLettre);
-
 function ajouterLettre() {
     // Créer un clavier
     var table = document.getElementById('grille')
@@ -7,7 +6,7 @@ function ajouterLettre() {
     keyboard.setAttribute("id", "clavier");
 
     var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    var rows = 1;
+    var rows = 3;
     var lettersPerRow = Math.ceil(letters.length / rows);
     var index = 0;
     for (var i = 0; i < rows; i++) {
@@ -32,13 +31,10 @@ function ajouterLettre() {
         }
         keyboard.appendChild(row);
     }
-
-    // Afficher le clavier sur plusieurs lignes
     var keyboardRows = keyboard.getElementsByTagName("div");
     for (var i = 0; i < keyboardRows.length; i++) {
         keyboardRows[i].style.display = "inline-block";
         keyboardRows[i].style.marginBottom = "10px";
     }
-
     table.after(keyboard);
 }
