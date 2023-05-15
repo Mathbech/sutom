@@ -10,7 +10,6 @@ function ajouterLettre() {
     var rows = 1;
     var lettersPerRow = Math.ceil(letters.length / rows);
     var index = 0;
-
     for (var i = 0; i < rows; i++) {
         var row = document.createElement("div");
         for (var j = 0; j < lettersPerRow; j++) {
