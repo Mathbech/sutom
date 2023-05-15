@@ -20,16 +20,21 @@ function create_table() {
 
     var tb1 = document.createElement("table");
     var tb1boby = document.createElement("tbody");
-
+    $o = 0;
+    
     for (var i = 0; i < 6; i++) {
         // creates a table row
         var row = document.createElement("tr");
-
+        $o = $o +1;
+        row.id = "line" + $o
+        $r = 0;
         for (var j = 0; j < motChoisi.length; j++) {
             // Create a <td> element and a text node, make the text
             // node the contents of the <td>, and put the <td> at
             // the end of the table row
             var cell = document.createElement("td");
+            $r = $r+1;
+            cell.id = "cell" + $r;
             // var cellText = document.createTextNode(".");
             var letter;
             if (j == 0) {
