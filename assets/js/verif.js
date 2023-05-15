@@ -1,4 +1,4 @@
-window.addEventListener("keydown", function (event) {
+window.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         verif();
     }

@@ -1,12 +1,10 @@
-window.addEventListener("keydown", ajouterLettre);
+window.addEventListener("keydown", ajouterLettre());
 
-function ajouterLettre(event) {
-    var lettre = event.key;
-    if (lettre != "Enter") {
-        var table = document.getElementById("grille");
-        table.innerHTML += lettre;
-        let newRow = table.insertRow(-1);
-        let cell = newRow.insertCell(0);
-        cell.innerHTML = lettre;        
-    }
+function ajouterLettre() {
+    let tableau = document.getElementById("grille");
+    let lettreInput = document.getElementById("lettreInput");
+    let lettre = lettreInput.value;
+    let newRow = tableau.insertRow(-1);
+    let cell = newRow.insertCell(0);
+    cell.innerHTML = lettre;
 }
