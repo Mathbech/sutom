@@ -21,6 +21,7 @@ function create_table() {
             for (var i = 0; i < 6; i++) {
                 // creates a table row
                 var row = document.createElement("tr");
+                row.className = "ligne" + i;
 
                 for (var j = 0; j < mots.length; j++) {
                     var cell = document.createElement("td");
