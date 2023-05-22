@@ -43,7 +43,7 @@ function ajouterLettre() {
 
 function ajouterLettreDansGrille(lettre) {
     var cells = document.getElementsByTagName("td");
-    for (var k = 0; k < cells.length; k++) {
+    for (var k = 1; k < cells.length; k++) {
         // console.log(cells[k]);
         if (cells[k].innerHTML == "." && cells[k].parentNode.rowIndex == currentRowIndex) {
             cells[k].innerHTML = lettre;
