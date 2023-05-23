@@ -1,0 +1,93 @@
+h1 {
+    font-family: 'Rocher';
+    text-align: center;
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#game-board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.letter-box {
+    background-color: rgb(224, 231, 109);
+    border: 4px solid rgb(192, 156, 27);
+    border-radius: 3px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: rgb(151, 105, 5);
+}
+
+.filled-box {
+    border: 4px solid rgb(192, 156, 27);
+}
+
+.letter-row {
+    display: flex;
+}
+
+.refresh-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(20, 231, 109);
+    color: #fc000d;
+    font-size: 16px;
+    border: 1px solid #49a127;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.refresh-button:hover {
+    background-color: rgb(155, 160, 54);
+}
+
+.refresh-button:focus {
+    outline: none;
+}
+
+.refresh-button:active {
+    background-color: rgb(140, 146, 29);
+}
+
+#keyboard-cont {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#keyboard-cont div {
+    display: flex;
+}
+
+.second-row {
+    margin: 0.5rem 0;
+}
+
+.keyboard-button {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin: 0 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(31, 199, 67);
+    border-color: rgb(41, 192, 27);
+    color: rgb(5, 32, 151);
+}
