@@ -1,3 +1,4 @@
+// Définition d'un tableau de mots
 export const WORDS = [
   'chat',
   'chien',
