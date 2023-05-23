@@ -1,3 +1,7 @@
+body {
+  background-color: #49a127;
+}
+
 /* Style pour les balises h1 */
 h1 {
   font-family: 'Rocher'; 
@@ -100,7 +104,7 @@ h1 {
   margin: 0 2px;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: rgb(31, 199, 67);
-  border-color: rgb(41, 192, 27);
+  background-color: rgb(31, 95, 199);
+  border-color: rgb(31, 95, 199);
   color: rgb(5, 32, 151); 
 }
